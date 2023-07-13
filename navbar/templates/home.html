@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <link href="{% static 'css/home.css' %}" rel="stylesheet">
+</head>
+<body>
+    <aside>
+      <p> Menu </p>
+      <a href="javascript:void(0)">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        HomePage
+      </a>
+      <a href="{% url 'stopwatch' %}">
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        StopWatch
+      </a>
+      <a href="{% url 'clock' %}">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+        CodePen Home Analog Clock
+     </a>
+    </aside>
+</body>
+</html>
